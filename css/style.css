@@ -157,6 +157,9 @@ p {
     font-size: 1.2rem;
     color: var(--blanco);
 }
+.footer__texto span {
+    font-size: .8rem;
+}
 .footer__enlaces {
     color: var(--blanco);
 }
