@@ -1,0 +1,170 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --principal: #EED995;
+    --secundario: #FAF1D5;
+
+    --fuenteparrafos: 'Open Sans', sans-serif;
+    --fuentetitulos: 'PT Sans', sans-serif;
+}
+
+html { 
+    font-size: 62.5%; /* Para modificar el valor del REM */
+    box-sizing: border-box; /* Debe estar siempre en mis hojas de CSS */
+    scroll-snap-type: y mandatory; /* (Y) significa de arriba a bajo agrega el scroll por partes despues debo marcarlo en las secciones */
+}
+
+*, *:before, *:after { /* Debe estar siempre en mis hojas CSS */
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteparrafos);
+    line-height: 1;
+    font-size: 1.6rem;
+    background-image: linear-gradient(to bottom, var(--principal) 0%, var(--secundario) 100%);
+}
+
+/* GLOBALES */
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuentetitulos);
+    line-height: 1.2;
+}
+img {
+    max-width: 100%;
+}
+.centrar-texto {
+    text-align: center;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    width: 25rem;
+    height: 18rem;
+}
+
+/* MAIN */
+.main h1 {
+    font-size: 5rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.main h2 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+.main h3 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+.main h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        grid-auto-flow: column;
+        }
+    .entrada {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .ensalada {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .principal {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    .postre {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .bebida {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+}
+
+.entrada,
+.ensalada,
+.principal,
+.postre,
+.bebida {
+    border: 2px solid var(--negro);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.contenido__titulo--vino {
+    text-align: center;
+}
+.contenido__title,
+.contenido__titulo--interno {
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.contenido__title {
+    text-transform: uppercase;
+}
+.contenido__texto--plato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+}
+.contenido__texto--precio {
+    font-size: 1.5rem;
+}
+.contenido__texto--descripcion {
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 5rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgb(0 0 0 / 80%);
+    margin-top: 3rem;
+}
+.footer__texto {
+    display: inline-block;
+    padding: 2rem 1rem;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+}
+.footer__enlaces {
+    color: var(--blanco);
+}
+
+
+
+
+
+
+
+
