@@ -2,11 +2,9 @@
 
 <h3 align="center">Full Stack Developer</h3>
 
-<h4 align="center">🔭 Les presento "Menu"</h4>
-
 ## Descripcion 📖
 
-Plantilla de maquetacion para ofrecer como menu a los restaurantes.
+Plantilla para ofrecer como menu a los restaurantes.
 
 ## Tecnologías 🛠️
 
